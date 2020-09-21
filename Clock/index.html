@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset= "utf-8">
+  <link href="test1_style.css" rel="stylesheet" type="text/css">
+  <title>NIZKIi FLEX</title>
+ </head>
+   <body>
+	<div class = "main">
+		<div class = "number">
+				<div class = "little_line a"></div>
+
+				<div class = "big_line">
+					<div class = "left f"></div>
+					<div class = "right b"></div>
+				</div>
+
+	 			<div class = "little_line g"></div>
+
+				<div class = "big_line">
+					<div class = "left e"></div>
+					<div class = "right c"></div>
+				</div>
+
+				<div class = "little_line d"></div>	
+		</div>
+
+		<div class = "number">
+				<div class = "little_line a"></div>
+
+				<div class = "big_line">
+					<div class = "left f"></div>
+					<div class = "right b"></div>
+				</div>
+
+	 			<div class = "little_line g"></div>
+
+				<div class = "big_line">
+					<div class = "left e"></div>
+					<div class = "right c"></div>
+				</div>
+
+				<div class = "little_line d"></div>	
+		</div>
+
+		<div class = "points">
+			<div class = "point"></div>
+			<div class = "point"></div>
+		</div>
+
+		<div class = "number">
+				<div class = "little_line a"></div>
+
+				<div class = "big_line">
+					<div class = "left f"></div>
+					<div class = "right b"></div>
+				</div>
+
+	 			<div class = "little_line g"></div>
+
+				<div class = "big_line">
+					<div class = "left e"></div>
+					<div class = "right c"></div>
+				</div>
+
+				<div class = "little_line d"></div>	
+		</div>
+
+		<div class = "number">
+				<div class = "little_line a"></div>
+
+				<div class = "big_line">
+					<div class = "left f"></div>
+					<div class = "right b"></div>
+				</div>
+
+	 			<div class = "little_line g"></div>
+
+				<div class = "big_line">
+					<div class = "left e"></div>
+					<div class = "right c"></div>
+				</div>
+
+				<div class = "little_line d"></div>	
+		</div>
+
+		<div class = "points">
+			<div class = "point"></div>
+			<div class = "point"></div>
+		</div>
+
+		<div class = "number">
+				<div class = "little_line a"></div>
+
+				<div class = "big_line">
+					<div class = "left f"></div>
+					<div class = "right b"></div>
+				</div>
+
+	 			<div class = "little_line g"></div>
+
+				<div class = "big_line">
+					<div class = "left e"></div>
+					<div class = "right c"></div>
+				</div>
+
+				<div class = "little_line d"></div>	
+		</div>
+
+		<div class = "number">
+				<div class = "little_line a"></div>
+
+				<div class = "big_line">
+					<div class = "left f"></div>
+					<div class = "right b"></div>
+				</div>
+
+	 			<div class = "little_line g"></div>
+
+				<div class = "big_line">
+					<div class = "left e"></div>
+					<div class = "right c"></div>
+				</div>
+
+				<div class = "little_line d"></div>			
+		</div>
+
+
+
+	</div>
+   </body>
+
+ <script> 
+	// Получаем массивы элементов класса по имени сегмента a,b,c и тд
+	var masA = document.getElementsByClassName('a'); 
+	var masB = document.getElementsByClassName('b');
+    var masC = document.getElementsByClassName('c');
+	var masD = document.getElementsByClassName('d');
+	var masE = document.getElementsByClassName('e');
+	var masF = document.getElementsByClassName('f');
+	var masG = document.getElementsByClassName('g');
+	// функции изменения элементов на числа
+	function change_to_0(i) //i - индекс(комер) цифры, к которой применяем изменение
+	{
+	//где нужно добавляем класс on, где не нужно - удаляем
+		masA[i].classList.add("on");
+		masB[i].classList.add("on");
+		masC[i].classList.add("on");
+		masD[i].classList.add("on");
+		masE[i].classList.add("on");
+		masF[i].classList.add("on");
+		masG[i].classList.remove("on");
+	}
+
+
+		function change_to_1(i)
+	{
+		masA[i].classList.remove("on");
+		masB[i].classList.add("on");
+		masC[i].classList.add("on");
+		masD[i].classList.remove("on");
+		masE[i].classList.remove("on");
+		masF[i].classList.remove("on");
+		masG[i].classList.remove("on");
+	}
+
+
+	function change_to_2(i)
+	{
+		masA[i].classList.add("on");
+		masB[i].classList.add("on");
+		masC[i].classList.remove("on");
+		masD[i].classList.add("on");
+		masE[i].classList.add("on");
+		masF[i].classList.remove("on");
+		masG[i].classList.add("on");
+	}
+
+
+	function change_to_3(i)
+	{
+		masA[i].classList.add("on");
+		masB[i].classList.add("on");
+		masC[i].classList.add("on");
+		masD[i].classList.add("on");
+		masE[i].classList.remove("on");
+		masF[i].classList.remove("on");
+		masG[i].classList.add("on");
+	}
+
+
+	function change_to_4(i)
+	{
+		masA[i].classList.remove("on");
+		masB[i].classList.add("on");
+		masC[i].classList.add("on");
+		masD[i].classList.remove("on");
+		masE[i].classList.remove("on");
+		masF[i].classList.add("on");
+		masG[i].classList.add("on");
+	}
+
+
+	function change_to_5(i)
+	{
+		masA[i].classList.add("on");
+		masB[i].classList.remove("on");
+		masC[i].classList.add("on");
+		masD[i].classList.add("on");
+		masE[i].classList.remove("on");
+		masF[i].classList.add("on");
+		masG[i].classList.add("on");
+	}
+
+
+	function change_to_6(i)
+	{
+		masA[i].classList.add("on");
+		masB[i].classList.remove("on");
+		masC[i].classList.add("on");
+		masD[i].classList.add("on");
+		masE[i].classList.add("on");
+		masF[i].classList.add("on");
+		masG[i].classList.add("on");
+	}
+
+
+	function change_to_7(i)
+	{
+		masA[i].classList.add("on");
+		masB[i].classList.add("on");
+		masC[i].classList.add("on");
+		masD[i].classList.remove("on");
+		masE[i].classList.remove("on");
+		masF[i].classList.remove("on");
+		masG[i].classList.remove("on");
+	}
+
+
+	function change_to_8(i)
+	{
+		masA[i].classList.add("on");
+		masB[i].classList.add("on");
+		masC[i].classList.add("on");
+		masD[i].classList.add("on");
+		masE[i].classList.add("on");
+		masF[i].classList.add("on");
+		masG[i].classList.add("on");
+	}
+
+
+	function change_to_9(i)
+	{
+		masA[i].classList.add("on");
+		masB[i].classList.add("on");
+		masC[i].classList.add("on");
+		masD[i].classList.add("on");
+		masE[i].classList.remove("on");
+		masF[i].classList.add("on");
+		masG[i].classList.add("on");
+	}
+
+	// Функция изменения цифры часов на какое-то число
+	// el - номер цифры, которую нужно изменитт
+	// value - число, на которую изменить цифру часов
+	function change(el,value) {
+	
+ 	 switch (value) {  
+		case 0:
+			change_to_0(el-1);
+        		break;
+  		case 1:
+			change_to_1(el-1);
+    			break;
+ 		case 2:
+    			change_to_2(el-1);
+    			break;
+  		case 3:
+    			change_to_3(el-1);
+   			break;
+  		case 4:
+   				change_to_4(el-1);
+    			break;
+  		case 5:
+    			change_to_5(el-1);
+    			break;
+  		case 6:
+    			change_to_6(el-1);
+    			break;
+  		case 7:
+   				change_to_7(el-1);
+    			break;
+  		case 8:
+    			change_to_8(el-1);
+    			break;
+  		case 9:
+    			change_to_9(el-1);
+   			break;
+  
+  		}
+	}
+	// массив элементов класса точек
+	var masP = document.getElementsByClassName('point');
+	var bl = true; // переменная для чередования включения и выключения точек
+
+	function on_point() // функция для включения точек
+	{
+		masP[0].classList.add("on");
+		masP[1].classList.add("on");
+		masP[2].classList.add("on");
+		masP[3].classList.add("on");
+	}
+	
+	function off_point()// функция для выключения точек
+	{
+		masP[0].classList.remove("on");
+		masP[1].classList.remove("on");
+		masP[2].classList.remove("on");
+		masP[3].classList.remove("on");
+	}
+	// установление(обновление) времени
+	function set_time(){
+
+		if(bl)
+		{
+			on_point();
+			bl = false;
+		}
+		else
+		{
+			off_point();
+			bl = true;
+		}
+
+
+		var dat= new Date();
+			
+		var h = dat.getHours();
+		if(h>=10)
+		{
+			change(1,Math.floor(h/10));
+			change(2,h%10);
+		}
+		else if(h>0)
+		{	
+			change(1,0);
+			change(2,h);
+		}
+		else if(h==0)
+		{	
+			change(1,0);
+			change(2,0);
+		}
+
+		var m = dat.getMinutes();
+		if(m>=10)
+		{
+			change(3,Math.floor(m/10));
+			change(4,m%10);
+		}
+		else if(m>0)
+		{	
+			change(3,0);
+			change(4,m);
+		}
+		else if(m==0)
+		{	
+			change(3,0);
+			change(4,0);
+		}
+
+		var s = dat.getSeconds();
+		if(s>=10)
+		{
+			change(5,Math.floor(s/10));
+			change(6,s%10);
+		}
+		else if(s>0)
+		{	
+			change(5,0);
+			change(6,s);
+		}
+		else if(s==0)
+		{	
+			change(5,0);
+			change(6,0);
+		}
+	}
+	// повторять функцию каждую секунду
+	setInterval(set_time, 1000);
+
+
+</script>
+</html>

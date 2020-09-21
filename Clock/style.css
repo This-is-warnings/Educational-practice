@@ -1,0 +1,72 @@
+body
+{
+	background: black;
+}
+.main
+{
+
+	position: absolute;
+	border: 2px solid #4B4343;
+	margin: 70px;
+	padding:10px;
+	border-radius: 50px;
+	display: flex;
+	transform: skewX(-5deg);
+}
+.number
+{
+
+	width: 140px;
+	height: 280px;
+	margin:10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*transform: skewX(-5deg);*/
+}
+.little_line
+{
+	
+	width:80%;
+	flex: 1;
+	border-radius: 1000px;
+	background: #0C0C0C;
+}
+.big_line
+{	
+	display: flex;
+	flex: 7;
+	align-items: center;
+	width:100%;
+	justify-content: space-between;
+}
+.left,.right
+{	height:100%;
+	width: 15px;
+	border: 0px solid #14a0dc;
+	border-radius: 1000px;
+	background: #0C0C0C;
+}
+.points
+{
+	width:35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:space-around;
+	/*transform: skewX(-5deg);*/
+}
+.point
+{
+	width: 20px;
+	height:20px;
+    /*background: #BECF0C;*/
+	background: #0C0C0C;
+	border-radius:1000px;
+	/*box-shadow: 0px 0px 10px #BECF0C;*/
+}
+.on
+{
+	background: #BECF0C;
+	box-shadow: 0px 0px 8px #BECF0C;
+}
